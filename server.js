@@ -37,7 +37,11 @@ app.use(compression());
 // ----- Body parsers --------------------------------------------------------
 app.use(express.json({ limit: '64kb' }));
 app.use(express.urlencoded({ extended: true, limit: '64kb' }));
-
+app.use(cors({
+  origin: true,              // allows any origin (Lovable, Vercel, localhost, etc.)
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
 // ----- Observability & protection -----------------------------------------
 app.use(logger);
 //app.use(timeout);
