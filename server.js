@@ -29,7 +29,7 @@ const ussdRoutes = require('./routes/ussd');
 const analyticsRoutes = require('./routes/analytics');
 
 const app = express();
-
+const cors = require('cors');
 // ----- Security & compression ---------------------------------------------
 app.use(helmet());
 app.use(compression());
