@@ -22,6 +22,10 @@ module.exports = {
     apiKey: process.env.AT_API_KEY,
     username: process.env.AT_USERNAME,
   },
-  port: parseInt(process.env.PORT || '3000', 10),
+    port: parseInt(process.env.PORT || '3000', 10),
   nodeEnv: process.env.NODE_ENV || 'development',
+  rateLimit: {
+    windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '60000', 10),
+    max: parseInt(process.env.RATE_LIMIT_MAX || '100', 10),
+  },
 };
