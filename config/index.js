@@ -18,7 +18,7 @@ module.exports = {
     baseUrl: process.env.FEATHERLESS_BASE_URL || 'https://api.featherless.ai/v1',
     model: process.env.FEATHERLESS_MODEL || 'deepseek-ai/DeepSeek-V3-0324',
   },
-  africaSTalking: {
+  at: {
     apiKey: process.env.AT_API_KEY,
     username: process.env.AT_USERNAME,
   },
