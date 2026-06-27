@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "test": "node --test"
   },
-  "dependencies": {
+  
+    "dependencies": {
+  "cors": "^2.8.5",
+  "@supabase/supabase-js": "...",
+  "express": "...",
     "@supabase/supabase-js": "^2.45.0",
     "africastalking": "^0.6.2",
     "axios": "^1.7.0",
