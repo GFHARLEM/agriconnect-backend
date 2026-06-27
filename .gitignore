@@ -1,0 +1,44 @@
+# ─── Credentials & secrets ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# Common secret/credential file names
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+service-account*.json
+firebase-adminsdk*.json
+
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+
+# ─── Logs & runtime ───────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Environment & build output ───────────────────────────────────────────────
+dist/
+build/
+.cache/
+coverage/
+.nyc_output/
+
+# ─── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

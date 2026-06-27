@@ -1,0 +1,27 @@
+{
+  "name": "agriconnect-backend",
+  "version": "2.0.0",
+  "description": "SMS/USSD pest & disease advisory for Ugandan smallholder farmers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "africastalking": "^0.6.2",
+    "axios": "^1.7.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "nodemon": "^3.1.4"
+  }
+}
