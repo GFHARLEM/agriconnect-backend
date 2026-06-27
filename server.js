@@ -40,8 +40,12 @@ app.use(express.urlencoded({ extended: true, limit: '64kb' }));
 
 // ----- Observability & protection -----------------------------------------
 app.use(logger);
-app.use(timeout);
+//app.use(timeout);
 app.use(rateLimit);
+// Add this root route for Render's health check
+app.get('/', (req, res) => {
+  res.json({ ok: true, service: 'AgriConnect API' });
+});
 
 // ----- Health check --------------------------------------------------------
 app.get('/health', async (req, res) => {
